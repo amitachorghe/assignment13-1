@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      h1 {
+        text-align: center;
+        color: rgba(139, 7, 40, 0.685);
+      }
+      body{
+        background-color: rgb(199, 134, 139);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pascal Star Pattern (*)</h1>
+    <script>
+      var n = prompt('Enter No. :');
+      var stars = "";
+      for (var i = 1; i <= n; i++)
+       {
+        for (var j = 1; j < i; j++)
+         {
+           stars = stars + "*";
+         }
+        stars += "\n";
+       }
+       for (var i = 1; i <= n - 1; i++)
+        {
+        for (var j = 0; j < n - i; j++)
+         {
+            stars = stars + "*";
+        }
+        stars += "\n";
+      }
+      console.log(stars);
+    </script>
+  </body>
+</html>
